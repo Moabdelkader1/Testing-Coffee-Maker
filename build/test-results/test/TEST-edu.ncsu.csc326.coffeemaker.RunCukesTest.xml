@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.ncsu.csc326.coffeemaker.RunCukesTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-RB5FFH9" time="0.0">
+  <properties/>
+  <system-out><![CDATA[edu.ncsu.csc326.coffeemaker.exceptions.InventoryException: Units of sugar must be a positive integer
+edu.ncsu.csc326.coffeemaker.exceptions.InventoryException: Units of sugar must be a positive integer
+edu.ncsu.csc326.coffeemaker.exceptions.InventoryException: Units of coffee must be a positive integer
+edu.ncsu.csc326.coffeemaker.exceptions.InventoryException: Units of milk must be a positive integer
+Coffee: 15
+Milk: 15
+Sugar: 15
+Chocolate: 15
+
+Money in machine: 100
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+using recipes succeeded
+moneyInserted: 100 remainder: 50
+Beverage purchased.
+Money in machine: 20
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+not enough money: 50
+moneyInserted: 20 remainder: 20
+Money in machine: 100
+Recipes: 
+No recipe!
+moneyInserted: 100 remainder: 100
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+not enough money: 50
+moneyInserted: 0 remainder: 0
+Money in machine: 100
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+using recipes failed: 75
+moneyInserted: 100 remainder: 100
+Money in machine: 100
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+using recipes failed: 50
+moneyInserted: 100 remainder: 100
+Money in machine: 100
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+using recipes failed: 100
+moneyInserted: 100 remainder: 100
+Money in machine: 100
+Recipes: 
+1. Coffee
+2. Mocha
+3. Latte
+4. Hot Chocolate
+using recipes failed: 100
+moneyInserted: 100 remainder: 100
+
+?[31mFailed scenarios:?[0m
+?[31medu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:125 ?[0m# Scenario: Delete a recipe that does not exist
+?[31medu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:160 ?[0m# Scenario: Add Inventory
+?[31medu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:200 ?[0m# Scenario: Add negative sugar
+?[31medu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:247 ?[0m# Scenario: Purchase Beverage that does not exist
+
+28 Scenarios (?[31m4 failed?[0m, ?[32m24 passed?[0m)
+123 Steps (?[31m4 failed?[0m, ?[36m5 skipped?[0m, ?[32m114 passed?[0m)
+0m0.127s
+
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at edu.ncsu.csc326.coffeemaker.RecipeBook.deleteRecipe(RecipeBook.java:71)
+	at edu.ncsu.csc326.coffeemaker.CoffeeMaker.deleteRecipe(CoffeeMaker.java:56)
+	at edu.ncsu.csc326.coffeemaker.CoffeeMakerUI.UI_Input(CoffeeMakerUI.java:95)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.user_deletes_recipe(TestSteps.java:174)
+	at ✽.When user deletes recipe 6(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:127)
+
+org.junit.ComparisonFailure: expected:<O[K]> but was:<O[UT_OF_RANGE]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.status_message_should_appear(TestSteps.java:160)
+	at ✽.Then status message "OK" should appear(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:173)
+
+org.junit.ComparisonFailure: expected:<O[UT_OF_RANGE]> but was:<O[K]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.status_message_should_appear(TestSteps.java:160)
+	at ✽.Then status message "OUT_OF_RANGE" should appear(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:205)
+
+org.junit.ComparisonFailure: expected:<[OUT_OF_RANGE]> but was:<[INSUFFICIENT_FUNDS]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.status_message_should_appear(TestSteps.java:160)
+	at ✽.And status message "OUT_OF_RANGE" should appear(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:252)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

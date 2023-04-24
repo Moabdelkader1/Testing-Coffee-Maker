@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Purchase Beverage that does not exist" tests="7" skipped="1" failures="2" errors="0" timestamp="2023-04-12T13:59:10" hostname="DESKTOP-RB5FFH9" time="0.001">
+  <properties/>
+  <testcase name="Given an empty recipe book" classname="Scenario: Purchase Beverage that does not exist" time="0.0"/>
+  <testcase name="When insert money 100" classname="Scenario: Purchase Beverage that does not exist" time="0.0"/>
+  <testcase name="And user select beverage 0" classname="Scenario: Purchase Beverage that does not exist" time="0.0"/>
+  <testcase name="Then user should take 100 back" classname="Scenario: Purchase Beverage that does not exist" time="0.0"/>
+  <testcase name="And status message &quot;OUT_OF_RANGE&quot; should appear" classname="Scenario: Purchase Beverage that does not exist" time="0.0">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[OUT_OF_RANGE]&gt; but was:&lt;[INSUFFICIENT_FUNDS]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[OUT_OF_RANGE]&gt; but was:&lt;[INSUFFICIENT_FUNDS]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.status_message_should_appear(TestSteps.java:160)
+	at ✽.And status message &quot;OUT_OF_RANGE&quot; should appear(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:252)
+</failure>
+  </testcase>
+  <testcase name="And mode is &quot;WAITING&quot;" classname="Scenario: Purchase Beverage that does not exist" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: Purchase Beverage that does not exist" time="0.001">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[OUT_OF_RANGE]&gt; but was:&lt;[INSUFFICIENT_FUNDS]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[OUT_OF_RANGE]&gt; but was:&lt;[INSUFFICIENT_FUNDS]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.status_message_should_appear(TestSteps.java:160)
+	at ✽.And status message &quot;OUT_OF_RANGE&quot; should appear(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:252)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

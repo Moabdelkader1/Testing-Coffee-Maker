@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Add negative chocolate" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-12T13:59:10" hostname="DESKTOP-RB5FFH9" time="0.001">
+  <properties/>
+  <testcase name="Given an empty recipe book" classname="Scenario: Add negative chocolate" time="0.0"/>
+  <testcase name="When user add inventory" classname="Scenario: Add negative chocolate" time="0.0"/>
+  <testcase name="Then status message &quot;OUT_OF_RANGE&quot; should appear" classname="Scenario: Add negative chocolate" time="0.0"/>
+  <testcase name="And mode is &quot;WAITING&quot;" classname="Scenario: Add negative chocolate" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Add negative chocolate" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

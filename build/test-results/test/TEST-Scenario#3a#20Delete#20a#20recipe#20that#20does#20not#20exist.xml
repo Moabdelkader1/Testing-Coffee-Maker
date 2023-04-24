@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Delete a recipe that does not exist" tests="5" skipped="2" failures="2" errors="0" timestamp="2023-04-12T13:59:10" hostname="DESKTOP-RB5FFH9" time="0.004">
+  <properties/>
+  <testcase name="Given a default recipe book" classname="Scenario: Delete a recipe that does not exist" time="0.0"/>
+  <testcase name="When user deletes recipe 6" classname="Scenario: Delete a recipe that does not exist" time="0.002">
+    <failure message="java.lang.ArrayIndexOutOfBoundsException: 6" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 6
+	at edu.ncsu.csc326.coffeemaker.RecipeBook.deleteRecipe(RecipeBook.java:71)
+	at edu.ncsu.csc326.coffeemaker.CoffeeMaker.deleteRecipe(CoffeeMaker.java:56)
+	at edu.ncsu.csc326.coffeemaker.CoffeeMakerUI.UI_Input(CoffeeMakerUI.java:95)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.user_deletes_recipe(TestSteps.java:174)
+	at ✽.When user deletes recipe 6(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:127)
+</failure>
+  </testcase>
+  <testcase name="Then status message &quot;OUT_OF_RANGE&quot; should appear" classname="Scenario: Delete a recipe that does not exist" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And mode is &quot;WAITING&quot;" classname="Scenario: Delete a recipe that does not exist" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: Delete a recipe that does not exist" time="0.005">
+    <failure message="java.lang.ArrayIndexOutOfBoundsException: 6" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 6
+	at edu.ncsu.csc326.coffeemaker.RecipeBook.deleteRecipe(RecipeBook.java:71)
+	at edu.ncsu.csc326.coffeemaker.CoffeeMaker.deleteRecipe(CoffeeMaker.java:56)
+	at edu.ncsu.csc326.coffeemaker.CoffeeMakerUI.UI_Input(CoffeeMakerUI.java:95)
+	at edu.ncsu.csc326.coffeemaker.TestSteps.user_deletes_recipe(TestSteps.java:174)
+	at ✽.When user deletes recipe 6(edu/ncsu/csc326/coffeemaker/CoffeeMaker.feature:127)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

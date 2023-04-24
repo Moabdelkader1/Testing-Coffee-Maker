@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Purchase Beverage without enough chocolate" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-04-12T13:59:10" hostname="DESKTOP-RB5FFH9" time="0.001">
+  <properties/>
+  <testcase name="Given a default recipe book" classname="Scenario: Purchase Beverage without enough chocolate" time="0.0"/>
+  <testcase name="When insert money 100" classname="Scenario: Purchase Beverage without enough chocolate" time="0.0"/>
+  <testcase name="And user select beverage 1" classname="Scenario: Purchase Beverage without enough chocolate" time="0.0"/>
+  <testcase name="Then user should take 100 back" classname="Scenario: Purchase Beverage without enough chocolate" time="0.0"/>
+  <testcase name="And status message &quot;INSUFFICIENT_FUNDS&quot; should appear" classname="Scenario: Purchase Beverage without enough chocolate" time="0.0"/>
+  <testcase name="And mode is &quot;WAITING&quot;" classname="Scenario: Purchase Beverage without enough chocolate" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Purchase Beverage without enough chocolate" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
